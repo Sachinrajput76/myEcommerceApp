@@ -1,0 +1,7 @@
+.search {
+  width: 70% !important;
+  margin: auto;
+}
+.search .input-group-append {
+  cursor: pointer;
+}
