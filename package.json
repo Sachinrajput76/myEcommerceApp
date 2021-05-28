@@ -1,13 +1,18 @@
 {
+  "homepage": "https://Sachinrajput76.github.com/myEcommerceApp.git",
   "name": "ecommerce-app",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "predeploy":"npm run build",
+    "deploy": "gh-pages -d build",
+    "depnpm install gh-pages --save-devloy":"gh-pages -d build",
     "start": "node backend/server",
     "server": "nodemon backend/server",
     "client": "npm start --prefix frontend",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "build": "webpack"
   },
   "keywords": [],
   "author": "Sachin Kumar",
@@ -17,6 +22,7 @@
   },
   "devDependencies": {
     "concurrently": "^6.0.2",
+    "gh-pages": "^3.1.0",
     "nodemon": "^2.0.7"
   }
 }
